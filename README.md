@@ -24,5 +24,9 @@ Once you've installed those, restart klipper and run the `SHAPER_CALIBRATE` comm
 Custom loading macros:
 Honestly we are really spoiled with the auto load macro from user Mjsfech on the discord channel.  Here is what I have so far:
 
-`INITIAL_LOAD_SOLO` - This will move the selectred extruder forward 150mm.  This is basically just to pull the filament in to get started.
-`INITIAL_LOAD` - Same as above however it cycles through the first 4 extruders
+- `INITIAL_LOAD_SOLO` - This will move the selectred extruder forward 150mm.  This is basically just to pull the filament in to get started.
+- `INITIAL_LOAD` - Same as above however it cycles through the first 4 extruders
+- `FINAL_LOAD_SOLO` - This will heat the extruder to 220 and pull in 375mm from whichever selected extruder.  It then pulls another 125mm of filament at 5mm/s.  This is meant to basically purge the nozzle and at this point filament should be extruder.  It then performs a `SET_FILAMENT` command and cuts the filament then retracts it to the rest position, ready for a print.
+- `FINAL_LOAD` - Same as above however it cycles through the first 4 extruders.
+- `UNLOAD_SPOOL` - This will retract the selected extruder 700mm, unloading it.
+- `G28` - Homing macros was renamed to `38.1` to allow for a more quick homing process.  If you wish to use the original homing macro either erase my entry from the custom_macros.cfg file or just use `38.1` to call the macro.
