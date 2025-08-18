@@ -1,6 +1,6 @@
 This is a set of config files to be used in conjunction with the Ender 3 V3 SE and the CoPrint KCM Multicolor Kit.
 
-Typically for the Ender 3 V3 SE you would need to use the marlin based chromapad or chromakit.  This mod however allows you to use the cheaper KCM kit instead.
+Typically for the Ender 3 V3 SE you would need to use the chromapad or chromakit.  This mod however allows you to use the cheaper KCM kit instead.
 
 This mod requires you to have klipper running on a raspi, configured to control this printer.  There are plenty of guides on how to get this setup initially.  Once you have it up and running, you can drag, drop and tweak these configs.
 
@@ -30,4 +30,4 @@ Honestly we are really spoiled with the auto load macro from user Mjfsch on the 
 - `FINAL_LOAD_SOLO` - This will heat the extruder to 220 and pull in 375mm from whichever selected extruder.  It then pulls another 125mm of filament at 5mm/s.  This is meant to basically purge the nozzle and at this point filament should be extruding.  It then performs a `SET_FILAMENT` command and cuts the filament then retracts it to the rest position, ready for a print.
 - `FINAL_LOAD` - Same as above however it cycles through the first 4 extruders.
 - `UNLOAD_SPOOL` - This will retract the selected extruder 700mm, unloading it.
-- `G28` - Homing macros was renamed to `G38.1` to allow for a more quick homing process.  If you wish to use the original homing macro either erase my entry from the custom_macros.cfg file or just use `G38.1` to call the macro.
+- `G28` - Homing macros was renamed to `G28.1` to allow for a more quick homing process.  If you wish to use the original homing macro either erase my entry from the custom_macros.cfg file or just use `G28.1` to call the macro.
