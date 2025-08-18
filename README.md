@@ -1,2 +1,16 @@
-# Ender-3-V3-SE-CoPrint-KCM-Kit-Config-Files
-This is a set of config files to be used in conjunction with the Ender 3 V3 SE and the CoPrint KCM Multicolor Kit
+This is a set of config files to be used in conjunction with the Ender 3 V3 SE and the CoPrint KCM Multicolor Kit.
+
+Typically for the Ender 3 V3 SE you would need to use the marlin based chromapad or chromakit.  This mod however allows you to use the cheaper KCM kit instead.
+
+This mod requires you to have klipper running on a raspi, configured to control this printer.  There are plenty of guides on how to get this setup initially.  Once you have it up and running, you can drag, drop and tweak these configs.
+
+These configs are for the NON RUNOUT SENSOR chromaheads and do not have the autoload macro or any of the macro adjustments needed for the runout sensor.  Please keep that in mind.
+
+These configs are drag and drop however some things to keep in mind:
+- You will need to create your own mesh
+- You will need to add your own z offset.  In these configs you can find the entry for this under the startprint macro in cp_macro.cfg
+- INPUT SHAPING IS SUPPORTED PLEASE SEE BELOW
+- You will need to enter your own serial IDs for not only the chroma equipment but also your printers MCU
+- Changes were made the filament_cut macro to allow for more time before retraction
+- Custom load and unload macros defined below
+- 
