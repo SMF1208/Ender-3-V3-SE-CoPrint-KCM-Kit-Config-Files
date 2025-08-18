@@ -23,7 +23,7 @@ Input shaping is enabled by default however it required dependencies:
 Once you've installed those, restart klipper and run the `SHAPER_CALIBRATE` command and it should now work.  If you run into issues saving your values, enter them manually under the extruder section in the chromahead.cfg.
 
 Custom loading macros:
-Honestly we are really spoiled with the auto load macro from user Mjfsch on the discord channel.  Here is what I have so far:
+Honestly we are really spoiled with the auto load macro from user Mjfsch on the discord channel.  Here is what I quickly threw together for now:
 
 - `INITIAL_LOAD_SOLO` - This will move the selectred extruder forward 150mm.  This is basically just to pull the filament in to get started.
 - `INITIAL_LOAD` - Same as above however it cycles through the first 4 extruders
