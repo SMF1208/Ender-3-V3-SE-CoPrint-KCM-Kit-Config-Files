@@ -1,3 +1,9 @@
+Update 11/1/25
+- Added the auto_load macro.  If you do not have the runout sensor version of the 8in1 head, use the commented out macros in custom_macro.cfg and remove auto_load.cfg from your printer.cfg
+- Slowed printer max speeds to resolve timing issues.
+- Updated various macros and extruder settings.
+
+========================================================================================================================================
 This is a set of config files to be used in conjunction with the Ender 3 V3 SE and the CoPrint KCM Multicolor Kit.
 
 Typically for the Ender 3 V3 SE you would need to use the chromapad or chromakit.  This mod however allows you to use the cheaper KCM kit instead.
