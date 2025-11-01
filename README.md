@@ -4,6 +4,7 @@ Update 11/1/25
 - Updated various macros and extruder settings.
 
 ========================================================================================================================================
+
 This is a set of config files to be used in conjunction with the Ender 3 V3 SE and the CoPrint KCM Multicolor Kit.
 
 Typically for the Ender 3 V3 SE you would need to use the chromapad or chromakit.  This mod however allows you to use the cheaper KCM kit instead.
